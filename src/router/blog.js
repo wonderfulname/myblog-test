@@ -33,7 +33,7 @@ const blogRouter = (req) => {
     } else {
       return new ErrorModel('删除失败!')
     }
-  }
+  } 
 
   if (method === 'POST' && req.path === '/api/blog/update') {
     const id = req.query.id
