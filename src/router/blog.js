@@ -9,7 +9,6 @@ const blogRouter = (req) => {
 
   // 获取博客列表
   if (method === 'GET' && req.path === '/api/blog/list') {
-    console.log('blog router is right !')
     const author = req.query.author || ''
     const keyword = req.query.keyword || ''
     // const listData = getList(author, keyword)
